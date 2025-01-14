@@ -1,3 +1,9 @@
+const monthlyIncome = document.getElementById('income');
+const monthlyExpense = document.getElementById('expense');
+const submitGainsButton = document.getElementById('submit-gains');
+const submitExpensesButton = document.getElementById('submit-expenses');
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const incomeInput = document.getElementById('income');
     const expenseInput = document.getElementById('expense');
@@ -22,3 +28,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const balance = income - expense;
     resultDiv.textContent = `Your monthly balance is: $${balance.toFixed(2)}`;
 });
+
+
+
+function saveIncome() {
+    localStorage.setItem('monthlyIncome', monthlyIncome.value);
+}
+
+function saveExpense() {
+    localStorage.setItem('monthlyExpense', monthlyExpense.value);
+}
+
+submitGainsButton.addEventListener('click', saveIncome);
+submitExpensesButton.addEventListener('click', saveExpense);
