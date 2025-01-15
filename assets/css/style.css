@@ -1,7 +1,37 @@
 header {
-
+    text-align: center;
+    padding: 30px;
+    /* place before coloring added, feel free to delete when merging */
+    border-bottom: 1px #000000 solid;
+    color: #3b39d8;
 };
+main{
+ 
+}
 
+aside {
+    float: left;
+    display:flex;
+    flex-direction: column;
+    width: 15vw;
+    height: 100vh;
+    /* place before coloring added, feel free to delete when merging */
+    border-right:1px #000000 solid;
+    align-items: center;
+
+
+}
+aside .btn{
+    width: 150px;
+    height: 50px;
+    margin: 50px;
+    border-radius: 50%;
+}
+.btn{
+    color:#03037c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px
+}
 body{
 
 };
@@ -10,6 +40,6 @@ p {
 
 };
 
-.box{
-    
+.box {
+
 }

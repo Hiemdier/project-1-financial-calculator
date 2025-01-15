@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- reset file -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
     <!-- cdn framework -->
     <link
       rel="stylesheet"
@@ -21,10 +23,10 @@
     <aside>
       <!-- Do we want to make class for each Modal, or just one for both? -->
       <div>
-        <button class="#">Gains</button>
+        <button type="button" class="btn btn-primary">Gains</button>
       </div>
       <div>
-        <button class="#">Expenses</button>
+        <button type="button" class="btn btn-primary">Expenses</button>
       </div>
     </aside>
 
@@ -32,19 +34,25 @@
       <section class="#">
         <p>These are the instructions to how to use the Calculator</p>
       </section>
+      <button type="button" class="btn btn-primary">Calculate</button>
       <!-- For the classes on all of our output sections, it may best to make a general class with 
      shared css traits, and an individual one for each section. This would make changing both all sections
      and each individual one easier -->
-      <div class="#">
-        <h3>Gains</h3>
+      <div class="box container">
+        <h3>income</h3>
+        <p class="income"></p>
       </div>
-      <div class="#">
+      <div class="output">
         <!-- Size of text needs to be smaller due to a larger amount of text needing to be inputed -->
         <h4>Expenses Category</h4>
-        <h4>Amount</h4>
+          <p></p>
+        <h4>Total</h4>
+          <p class="Total"></p>
       </div>
+      <button type="button" class="btn btn-primary">Clear</button>
       <div class="#">
         <h3>Expected Gain or Loss</h3>
+        <p class="expected"></p>
       </div>
     </main>
     <footer></footer>
