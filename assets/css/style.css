@@ -1,15 +1,85 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 header {
-
+    text-align: center;
+    padding: 30px;
+    background-color: #6161d6
 };
-
 body{
+    /* reseting the default body background color, wasn't letting me style the main background until then */
+    background-color:#000000;
+}
+main{
+    background-color: #8282ca;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    width: auto;
+    max-width: 100%;
+}
 
-};
-
-p {
-
-};
-
+main div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    box-sizing: border-box;
+    align-self: center;
+    background-color: #8d8dcc;
+    border-radius: 25px;
+    z-index: auto;
+}
+aside {
+    float: left;
+    display:flex;
+    flex-direction: column;
+    width: 15vw;
+    height: 100vh;
+    background-color: #7676eb;
+    align-items: center;
+}
+aside .btn{
+    width: 150px;
+    height: 50px;
+    margin: 50px;
+    border-radius: 10%;
+}
+.instruction{
+    text-align: center;
+    margin: 5px;
+}
+.instruction-list{
+    text-align: left;
+}
+.btn{
+    color:#03037c;  
+    font-size: 25px;
+    border-radius: 10%;
+    margin:25px;
+}
 .box{
-    
+    border: #000000 2px solid;
+    display: inline-block;
+    border-radius: 25px;
+    width: 200px;
+    height: 500px;
+    margin: 5px;
+    background-color: #afafec;
+    text-align: center;
+
+}
+.income-box{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.expense-box{
+    width: 500px;
+    border-radius: 0px;
+}
+.gaintoloss-box{
+    width: 250px; 
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
