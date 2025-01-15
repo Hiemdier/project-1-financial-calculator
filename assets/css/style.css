@@ -1,7 +1,7 @@
 header {
     text-align: center;
     padding: 30px;
-    background-color: #5757dd
+    background-color: #6161d6
 };
 body{
     /* reseting the default body background color, wasn't letting me style the main background until then */
@@ -10,8 +10,9 @@ body{
 main{
     background-color: #8282ca;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 100vh;
+    text-align: center;
 
 }
 aside {
@@ -20,7 +21,7 @@ aside {
     flex-direction: column;
     width: 15vw;
     height: 100vh;
-    background-color: #6464f7;
+    background-color: #6767d4;
     align-items: center;
 }
 aside .btn{
@@ -30,10 +31,10 @@ aside .btn{
     border-radius: 10%;
 }
 .instruction{
-    
+    text-align: center;
 }
 .btn{
-    color:#03037c;
+    color:#03037c;  
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
     border-radius: 10%;
@@ -42,13 +43,17 @@ aside .btn{
 .box{
     border: #000000 2px solid;
     display: inline-block;
-    border-radius: 10%;
+    border-radius: 25px;
     width: 200px;
-    height: 50px;
+    height: 500px;
     margin: 5px;
     background-color: #afafec;
+    text-align: center;
 
 }
 .expense{
     width: 500px;
+}
+.gaintoloss{
+    width: 250px;  
 }
