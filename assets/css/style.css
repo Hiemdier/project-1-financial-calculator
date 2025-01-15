@@ -50,6 +50,9 @@ aside .btn{
     text-align: center;
     margin: 5px;
 }
+.instruction-list{
+    text-align: left;
+}
 .btn{
     color:#03037c;  
     font-size: 25px;
