@@ -2,6 +2,7 @@ const monthlyIncome = document.getElementById('income');
 const monthlyExpense = document.getElementById('expense');
 const submitGainsButton = document.getElementById('submit-gains');
 const submitExpensesButton = document.getElementById('submit-expenses');
+const clearButton = document.getElementById('clear');
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -29,8 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     resultDiv.textContent = `Your monthly balance is: $${balance.toFixed(2)}`;
 });
 
-
-
+// Function to save the income and expense values to local storage
 function saveIncome() {
     localStorage.setItem('monthlyIncome', monthlyIncome.value);
 }
@@ -41,3 +41,11 @@ function saveExpense() {
 
 submitGainsButton.addEventListener('click', saveIncome);
 submitExpensesButton.addEventListener('click', saveExpense);
+
+// Clear the local storage and the output Fields 
+clearButton.addEventListener('click', function() {
+    localStorage.clear();
+    monthlyIncome.value = '';
+    monthlyExpense.value = '';
+});
+
