@@ -1,31 +1,33 @@
 header {
     text-align: center;
     padding: 30px;
-    /* place before coloring added, feel free to delete when merging */
     background-color: #5757dd
 };
-main{
- background-color: #8888f7;
+body{
+    /* reseting the default body background color, wasn't letting me style the main background until then */
+    background-color:#000000;
 }
+main{
+    background-color: #8282ca;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
 
+}
 aside {
     float: left;
     display:flex;
     flex-direction: column;
     width: 15vw;
     height: 100vh;
-    /* place before coloring added, feel free to delete when merging */
     background-color: #6464f7;
     align-items: center;
-
-
 }
 aside .btn{
     width: 150px;
     height: 50px;
     margin: 50px;
     border-radius: 10%;
-
 }
 .btn{
     color:#03037c;
@@ -33,16 +35,17 @@ aside .btn{
     font-size: 25px;
     border-radius: 10%;
     margin:25px;
+}
+.box{
+    border: #000000 2px solid;
+    display: inline-block;
+    border-radius: 10%;
+    width: 200px;
+    height: 50px;
+    margin: 5px;
+    background-color: #afafec;
 
 }
-body{
-
-};
-
-p {
-
-};
-
-.box {
-
+.expense{
+    width: 500px;
 }
