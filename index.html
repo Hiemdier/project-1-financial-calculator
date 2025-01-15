@@ -23,10 +23,14 @@
     <aside>
       <!-- Do we want to make class for each Modal, or just one for both? -->
       <div>
-        <button type="button" class="btn btn-primary">Gains</button>
+        <button class="#" id="income">Gains</button>
       </div>
       <div>
-        <button type="button" class="btn btn-primary">Expenses</button>
+        <button class="#" id="expense">Expenses</button>
+      </div>
+      <div>
+        <button class="#" id="calculate">Calculate</button>
+        <p id="result"></p>
       </div>
     </aside>
 
@@ -38,21 +42,27 @@
       <!-- For the classes on all of our output sections, it may best to make a general class with 
      shared css traits, and an individual one for each section. This would make changing both all sections
      and each individual one easier -->
-      <div class="box container">
-        <h3>income</h3>
-        <p class="income"></p>
+      <div class="#">
+        <h3>Gains</h3>
+        <tbody id="income-table">
+        </tbody>
+        <h4>Total Gains</h4>
+        <tbody id="total-income">
+        </tbody>
       </div>
       <div class="output">
         <!-- Size of text needs to be smaller due to a larger amount of text needing to be inputed -->
-        <h4>Expenses Category</h4>
-          <p></p>
-        <h4>Total</h4>
-          <p class="Total"></p>
+        <h4 id="#">Expenses Category</h4>
+        <tbody id="expense-table">
+        </tbody>
+        <h4>Total Expenses</h4>
+        <tbody id="total-expenses">
+        </tbody>
       </div>
-      <button type="button" class="btn btn-primary">Clear</button>
-      <div class="#">
+      <div>
         <h3>Expected Gain or Loss</h3>
-        <p class="expected"></p>
+        <tbody id="total-table">
+        </tbody>
       </div>
     </main>
     <footer></footer>
