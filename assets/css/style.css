@@ -2,11 +2,10 @@ header {
     text-align: center;
     padding: 30px;
     /* place before coloring added, feel free to delete when merging */
-    border-bottom: 1px #000000 solid;
-    color: #3b39d8;
+    background-color: #5757dd
 };
 main{
- 
+ background-color: #8888f7;
 }
 
 aside {
@@ -16,7 +15,7 @@ aside {
     width: 15vw;
     height: 100vh;
     /* place before coloring added, feel free to delete when merging */
-    border-right:1px #000000 solid;
+    background-color: #6464f7;
     align-items: center;
 
 
@@ -25,12 +24,16 @@ aside .btn{
     width: 150px;
     height: 50px;
     margin: 50px;
-    border-radius: 50%;
+    border-radius: 10%;
+
 }
 .btn{
     color:#03037c;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px
+    font-size: 25px;
+    border-radius: 10%;
+    margin:25px;
+
 }
 body{
 
