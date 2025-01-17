@@ -11,6 +11,13 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
     <!-- own style sheets -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <title>Project 1 Financial Calculator</title>
@@ -32,7 +39,9 @@
         <p id="result"></p>
       </div>
       <div class="clear">
-        <button type="button" class="btn btn-primary" id="clearButton">Clear</button>
+        <button type="button" class="btn btn-primary" id="clearButton">
+          Clear
+        </button>
       </div>
     </aside>
 
@@ -40,49 +49,65 @@
       <section class="instruction">
         <h4>Instructions for Running the Calculator</h4>
         <ol class="instruction-list">
-          <li>Click the Gains button on the lefthand side. Fill in an income type and the amount gained from this, over a one month span of time. Repeat for any additional sources of income.</li>
-          <li>Click the Expenses button on the lefthand side. Fill in a monthly expense and the amount allocated to this expense. Repeat for all expense you are wishing to calculate with.</li>
-          <li>Click the Calculate button. The table on the righthand side will display your total income compared to your expenses.</li>
+          <li>
+            Click the Gains button on the lefthand side. Fill in an income type
+            and the amount gained from this, over a one month span of time.
+            Repeat for any additional sources of income.
+          </li>
+          <li>
+            Click the Expenses button on the lefthand side. Fill in a monthly
+            expense and the amount allocated to this expense. Repeat for all
+            expense you are wishing to calculate with.
+          </li>
+          <li>
+            Click the Calculate button. The table on the righthand side will
+            display your total income compared to your expenses.
+          </li>
         </ol>
       </section>
-     <div>
-      <div class="box income-box">
-        <h3>Gains</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Amount</th>
-            </tr>
-          </thead>
-          <tbody id="income-table"></tbody>
-        </table>
-        <h4>Total Gains</h4>
-        <p id="total-income"></p>
+      <div>
+        <div class="box income-box">
+          <h3>Gains</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Amount</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider" id="income-table"></tbody>
+          </table>
+          <h4>Total Gains</h4>
+          <p class="tot" id="total-income"></p>
+        </div>
+        <div class="box expense-box">
+          <h3>Expenses Category</h3>
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Amount</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider" id="expense-table"></tbody>
+          </table>
+          <h4>Total Expenses</h4>
+          <p class="tot" id="total-expenses"></p>
+        </div>
+        <div class="box gaintoloss-box">
+          <h3>Expected Gain or Loss</h3>
+          <p id="total"></p>
+        </div>
       </div>
-      <div class="box expense-box">
-        <h4>Expenses Category</h4>
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Amount</th>
-            </tr>
-          </thead>
-          <tbody id="expense-table"></tbody>
-        </table>
-        <h4>Total Expenses</h4>
-        <p id="total-expenses"></p>
-      </div>
-      <div class="box gaintoloss-box">
-        <h3>Expected Gain or Loss</h3>
-        <p id="total"></p>
-      </div>
-     </div>
     </main>
     <footer></footer>
     <!-- java framework file -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <!-- java own file -->
     <script src="./assets/js/script.js"></script>
   </body>
