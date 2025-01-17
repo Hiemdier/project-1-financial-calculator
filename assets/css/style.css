@@ -1,27 +1,23 @@
 *{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header {
     text-align: center;
     padding: 30px;
-    background-color: #28587B;
-    color: antiquewhite;
-}
+    background-color: #6161d6
+};
 body{
     /* reseting the default body background color, wasn't letting me style the main background until then */
-    background-color:whitesmoke;
-   
+    background-color:#000000;
 }
 main{
-    background-color: #85c6ec;
+    background-color: #8282ca;
     display: flex;
     flex-direction: column;
     height: 100vh;
     text-align: center;
-
-    flex-wrap: wrap;
-    flex-basis: 1;
-    
+    width: auto;
+    max-width: 100%;
 }
 
 main div{
@@ -31,11 +27,9 @@ main div{
     flex-shrink: 1;
     box-sizing: border-box;
     align-self: center;
-    background-color: #bbe8ff;
+    background-color: #8d8dcc;
     border-radius: 25px;
     z-index: auto;
-    
-    
 }
 aside {
     float: left;
@@ -43,7 +37,7 @@ aside {
     flex-direction: column;
     width: 15vw;
     height: 100vh;
-    background-color: #bbe8ff;
+    background-color: #7676eb;
     align-items: center;
 }
 aside .btn{
@@ -51,10 +45,6 @@ aside .btn{
     height: 50px;
     margin: 50px;
     border-radius: 10%;
-}
-
-footer{
-    text-align: center;
 }
 .instruction{
     text-align: center;
@@ -64,14 +54,10 @@ footer{
     text-align: left;
 }
 .btn{
-    background-color: #28587B;
-    color: antiquewhite;  
+    color:#03037c;  
     font-size: 25px;
     border-radius: 10%;
     margin:25px;
-    box-shadow: 2px 2px 4px;
-    flex-shrink: inherit;
-    
 }
 .box{
     border: #000000 2px solid;
@@ -80,27 +66,20 @@ footer{
     width: 200px;
     height: 500px;
     margin: 5px;
-    background-color: #f4eccc;
-    opacity: 0.8;
+    background-color: #afafec;
     text-align: center;
 
 }
 .income-box{
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    flex: 1;
-
-    
 }
 .expense-box{
-    width: 50%;
+    width: 500px;
     border-radius: 0px;
-    flex: 2;
 }
 .gaintoloss-box{
-    width: 25%; 
+    width: 250px; 
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-    flex: 1;
 }
-
