@@ -1,0 +1,107 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #28587B;
+    color: antiquewhite;
+}
+body{
+    /* reseting the default body background color, wasn't letting me style the main background until then */
+    background-color:whitesmoke;
+   
+}
+main{
+    background-color: #85c6ec;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+
+    flex-wrap: wrap;
+    flex-basis: 1;
+    
+}
+
+main div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    box-sizing: border-box;
+    align-self: center;
+    background-color: #bbe8ff;
+    border-radius: 25px;
+    z-index: auto;
+    
+    
+}
+aside {
+    float: left;
+    display:flex;
+    flex-direction: column;
+    width: 15vw;
+    height: 100vh;
+    background-color: #bbe8ff;
+    align-items: center;
+}
+aside .btn{
+    width: 150px;
+    height: 50px;
+    margin: 50px;
+    border-radius: 10%;
+}
+
+footer{
+    text-align: center;
+}
+.instruction{
+    text-align: center;
+    margin: 5px;
+}
+.instruction-list{
+    text-align: left;
+}
+.btn{
+    background-color: #28587B;
+    color: antiquewhite;  
+    font-size: 25px;
+    border-radius: 10%;
+    margin:25px;
+    box-shadow: 2px 2px 4px;
+    flex-shrink: inherit;
+    
+}
+.box{
+    border: #000000 2px solid;
+    display: inline-block;
+    border-radius: 25px;
+    width: 200px;
+    height: 500px;
+    margin: 5px;
+    background-color: #f4eccc;
+    opacity: 0.8;
+    text-align: center;
+
+}
+.income-box{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    flex: 1;
+
+    
+}
+.expense-box{
+    width: 50%;
+    border-radius: 0px;
+    flex: 2;
+}
+.gaintoloss-box{
+    width: 25%; 
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    flex: 1;
+    tes
+}
+
