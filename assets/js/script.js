@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
         displayExpenses(expenses);
     });
 
-    // Calculate functoin for total income and expenses
+    // Calculate function for total income and expenses
     calculateButton.addEventListener('click', function () {
         const incomes = JSON.parse(localStorage.getItem('incomes')) || [];
         const expenses = JSON.parse(localStorage.getItem('expenses')) || [];
