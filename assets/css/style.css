@@ -103,3 +103,11 @@ footer{
     border-bottom-left-radius: 0px;
     flex: 1;
 }
+
+.tot {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    color: black;
+    background-color: #fff;
+}
