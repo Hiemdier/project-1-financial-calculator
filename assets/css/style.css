@@ -104,3 +104,9 @@ footer{
     flex: 1;
 }
 
+
+@media (min-width: 384px) {
+    main{min-width: 384px;
+    }
+}
+    
