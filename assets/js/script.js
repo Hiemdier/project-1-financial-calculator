@@ -87,11 +87,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         const totalValue = totalIncomeValue - totalExpenseValue;
     
-        // Update the DOM with the calculated values
-        document.getElementById('total-income').textContent = totalIncomeValue.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
-        document.getElementById('total-expenses').textContent = totalExpenseValue.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
-        document.getElementById('total').textContent = totalValue.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
-    
         // Store calculated values in localStorage
         localStorage.setItem('totalIncome', JSON.stringify(totalIncomeValue));
         localStorage.setItem('totalExpenses', JSON.stringify(totalExpenseValue));
@@ -158,9 +153,21 @@ document.addEventListener('DOMContentLoaded', function () {
         expenseTable.innerHTML = expenseRows;
     };
 
+    // Display function for total income and expenses
+    const displayTotals = function () {
+        const totalIncome = JSON.parse(localStorage.getItem('totalIncome')) || 0;
+        const totalExpenses = JSON.parse(localStorage.getItem('totalExpenses')) || 0;
+        const total = JSON.parse(localStorage.getItem('total')) || 0;
+
+        document.getElementById('total-income').textContent = totalIncome.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+        document.getElementById('total-expenses').textContent = totalExpenses.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+        document.getElementById('total').textContent = total.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    };
+
     // Initialize data from localStorage
     const incomes = JSON.parse(localStorage.getItem('incomes')) || [];
     const expenses = JSON.parse(localStorage.getItem('expenses')) || [];
     displayIncome(incomes);
     displayExpenses(expenses);
+    displayTotals();
 });
