@@ -27,44 +27,24 @@
       <h1>Financial Calculator</h1>
     </header>
 
-    <aside>
-      <div>
+    
+
+    <main class="main">
+        <aside>
+      
         <button class="btn btn-primary" id="incomeButton">Gains</button>
-      </div>
-      <div>
+      
         <button class="btn btn-primary" id="expensesButton">Expenses</button>
-      </div>
-      <div>
+     
         <button class="btn btn-primary" id="calculateButton">Calculate</button>
         <p id="result"></p>
-      </div>
-      <div class="clear">
+      
         <button type="button" class="btn btn-primary" id="clearButton">
           Clear
         </button>
-      </div>
+      
     </aside>
-
-    <main class="main">
-      <section class="instruction">
-        <h4>Instructions for Running the Calculator</h4>
-        <ol class="instruction-list">
-          <li>
-            Click the Gains button on the lefthand side. Fill in an income type
-            and the amount gained from this, over a one month span of time.
-            Repeat for any additional sources of income.
-          </li>
-          <li>
-            Click the Expenses button on the lefthand side. Fill in a monthly
-            expense and the amount allocated to this expense. Repeat for all
-            expense you are wishing to calculate with.
-          </li>
-          <li>
-            Click the Calculate button. The table on the righthand side will
-            display your total income compared to your expenses.
-          </li>
-        </ol>
-      </section>
+      
       <div>
         <div class="box income-box">
           <h3>Gains</h3>
@@ -98,6 +78,25 @@
           <h3>Expected Gain or Loss</h3>
           <p id="total"></p>
         </div>
+        <section class="instruction">
+            <h4>Instructions for Running the Calculator</h4>
+            <ol class="instruction-list">
+              <li>
+                Click the Gains button on the lefthand side. Fill in an income type
+                and the amount gained from this, over a one month span of time.
+                Repeat for any additional sources of income.
+              </li>
+              <li>
+                Click the Expenses button on the lefthand side. Fill in a monthly
+                expense and the amount allocated to this expense. Repeat for all
+                expense you are wishing to calculate with.
+              </li>
+              <li>
+                Click the Calculate button. The table on the righthand side will
+                display your total income compared to your expenses.
+              </li>
+            </ol>
+          </section>
       </div>
     </main>
     <footer></footer>
