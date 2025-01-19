@@ -9,20 +9,20 @@ Step 1, Open the link to GitHub pages.
  Step 2. Click on the button labeled "Expenses", and input both a name for the expense (such as "Gas Bill") and the amount you wish to spend on it over one month.
  Step 3. Click on the button labeled "Calculate", and the information you inputed, along with all being compared to each other, will populate on the right hand side in tables.
  Step 4. Click on the button labeled "Clear", to clear the tables and the inputed information if you wish.
-    ![image of site](./assets/images/Screenshot1)
-    ![image of with gains and expenses added](./assets/images/Screenshot2)
+    <img src="./assets/images/Screenshot1.png" alt="screenshot of empty site"/>
+    <img src="./assets/images/Screenshot2.png" alt="screenshot of calculated site"/>
     ```
 ## Credits
 Collaborators:
-Shane Anderson (https://github.com/Hiemdier)
-Lexus Nealy (https://github.com/lexusnealy)
-Anshul Sharma (https://github.com/Anshul1555)
-Cooper Ellis  (https://github.com/dellis27)
+- <a href="(https://github.com/Hiemdier)">Shane Anderson</a>
+- <a href="(https://github.com/lexusnealy)">Lexus Nealy</a>
+- <a href="(https://github.com/Anshul1555)">Anshul Sharma</a>
+- <a href="(https://github.com/dellis27)">Cooper Ellis</a>
 --- 
 
 
 
 
-link---> https://hiemdier.github.io/project-1-financial-calculator/
+<a href="https://hiemdier.github.io/project-1-financial-calculator/">link</a>
 
 
