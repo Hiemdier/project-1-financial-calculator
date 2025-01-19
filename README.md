@@ -17,7 +17,7 @@ Collaborators:
 Shane Anderson (https://github.com/Hiemdier)
 Lexus Nealy (https://github.com/lexusnealy)
 Anshul Sharma (https://github.com/Anshul1555)
-Cooper Ellis  [link](https://github.com/dellis27)
+Cooper Ellis  (https://github.com/dellis27)
 --- 
 
 
