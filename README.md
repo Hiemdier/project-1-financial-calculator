@@ -14,10 +14,10 @@ Step 1, Open the link to GitHub pages.
     ```
 ## Credits
 Collaborators:
-- <a href="(https://github.com/Hiemdier)">Shane Anderson</a>
-- <a href="(https://github.com/lexusnealy)">Lexus Nealy</a>
-- <a href="(https://github.com/Anshul1555)">Anshul Sharma</a>
-- <a href="(https://github.com/dellis27)">Cooper Ellis</a>
+- <a href="https://github.com/Hiemdier">Shane Anderson</a>
+- <a href="https://github.com/lexusnealy">Lexus Nealy</a>
+- <a href="https://github.com/Anshul1555">Anshul Sharma</a>
+- <a href="https://github.com/dellis27">Cooper Ellis</a>
 --- 
 
 
