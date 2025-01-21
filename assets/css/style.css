@@ -105,13 +105,6 @@ footer{
     flex: 1;
 }
 
-#total {
-    font-size: 1.5rem;
-    color: #28587B;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
