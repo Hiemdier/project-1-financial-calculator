@@ -7,6 +7,28 @@ document.addEventListener('DOMContentLoaded', function () {
     const calculateButton = document.getElementById('calculateButton');
     const clearButton = document.getElementById('clearButton');
 
+    
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Display the modal when the page loads
+    modal.style.display = "block";
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+  
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
     // Add incomes function
     incomeButton.addEventListener('click', function () {
         const incomes = JSON.parse(localStorage.getItem('incomes')) || [];
@@ -98,6 +120,9 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('Expenses:', expenses);
         console.log('Total Expenses:', totalExpenseValue);
         console.log('Total:', totalValue);
+
+        // Display the updated totals
+        displayTotals();
     });
     
     // Toast function
@@ -167,28 +192,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize data from localStorage
     const incomes = JSON.parse(localStorage.getItem('incomes')) || [];
     const expenses = JSON.parse(localStorage.getItem('expenses')) || [];
+    const totalIncome = JSON.parse(localStorage.getItem('totalIncome')) || 0;
+    const totalExpenses = JSON.parse(localStorage.getItem('totalExpenses')) || 0;
+    const total = JSON.parse(localStorage.getItem('total')) || 0;
     displayIncome(incomes);
     displayExpenses(expenses);
-    displayTotals();
-
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Display the modal when the page loads
-    modal.style.display = "block";
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-  
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+    displayTotals(totalIncome, totalExpenses, total);
 });
